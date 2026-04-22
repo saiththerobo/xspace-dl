@@ -14,7 +14,7 @@ URL=$2
 
 yt-dlp \
     -f 'ba' \
-    --recode-video mp4 \
+    --remux-video mp4 \
     -o "${DATE} - %(title)s - %(id)s.%(ext)s" \
     --postprocessor-args "ffmpeg:-c copy" \
     "$URL"
